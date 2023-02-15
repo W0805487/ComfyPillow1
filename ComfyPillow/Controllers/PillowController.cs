@@ -8,10 +8,10 @@ namespace ComfyPillow.Controllers
         // 
         // GET: /Pillow/
 
-        public string Index()
-        {
-            return "This is my default action...";
-        }
+        //public string Index()
+        //{
+           // return "This is my default action...";
+       // }
 
         // 
         // GET: /Pillow/Welcome/ 
@@ -20,9 +20,9 @@ namespace ComfyPillow.Controllers
         {
             return "This is the Welcome action method...";
         }
-        //public IActionResult Index()
-        //{
-        //  return View();
-        // }
+        public IActionResult Index()
+        {
+         return View();
+         }
     }
 }
