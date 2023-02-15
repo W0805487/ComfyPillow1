@@ -9,3 +9,6 @@ create  repository on github named Comfypillow1
 
 create Welcome page
 
+completed part 1 of tutorial 
+
+
