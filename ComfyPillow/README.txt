@@ -9,6 +9,10 @@ create  repository on github named Comfypillow1
 
 create Welcome page
 
-completed part 1 of tutorial 
+Completed part 1 of tutorial 
+
+Start part 2 of tutorial
+
+Add controller named: PillowControllers
 
 
