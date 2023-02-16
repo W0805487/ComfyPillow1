@@ -26,25 +26,25 @@ Add controller named: PillowControllers
 Add all content according to tutorial
 
 3.Start part 3 of tutorial: add a view
-Replaced the index method with the code which is given in tutorial.
-Calls the controller's View method.
-create new folder named pillow in the view file then created new file index.cshtml in Pillow folder.
-Replace the contents of the Views/Pillow/Index.cshtml Razor view file with the given coding in tutorial.
+  Replaced the index method with the code which is given in tutorial.
+  Calls the controller's View method.
+  create new folder named pillow in the view file then created new file index.cshtml in Pillow folder.
+  Replace the contents of the Views/Pillow/Index.cshtml Razor view file with the given coding in tutorial.
 
 Date: 2023-02-16    continue....
 
-After that, I change the views and layout pages.
-Open the View/Shared/_Layout.cshtml file and make changes in this file. After that,
-Run the project on the IIS server to check the output.
-Everything is good...
+ After that, I change the views and layout pages.
+ Open the View/Shared/_Layout.cshtml file and make changes in this file. After that,
+ Run the project on the IIS server to check the output.
+ Everything is good...
 
 Create variation in Views/Pillow/Index.cshtml file and write code that is given in tutorial.
 completed part 3 of tutorial.
 
 
 4. Now I start part 4 of the tutorial:  add model.
-Add a data model class in the model folder. The class name is Pillow.cs
-Update the Pillow.cs file with the given code.
+   Add a data model class in the model folder. The class name is Pillow.cs
+   Update the Pillow.cs file with the given code.
 
 
 
