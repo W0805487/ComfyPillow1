@@ -42,6 +42,11 @@ Create variation in Views/Pillow/Index.cshtml file and write code that is given 
 completed part 3 of tutorial.
 
 
+4. Now I start part 4 of the tutorial:  add model.
+Add a data model class in the model folder. The class name is Pillow.cs
+Update the Pillow.cs file with the given code.
+
+
 
 
 
