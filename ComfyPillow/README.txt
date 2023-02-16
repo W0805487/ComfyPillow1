@@ -31,6 +31,16 @@ Calls the controller's View method.
 create new folder named pillow in the view file then created new file index.cshtml in Pillow folder.
 Replace the contents of the Views/Pillow/Index.cshtml Razor view file with the given coding in tutorial.
 
+Date: 2023-02-16    continue....
+
+After that, I change the views and layout pages.
+Open the View/Shared/_Layout.cshtml file and make changes in this file. After that,
+Run the project on the IIS server to check the output.
+Everything is good...
+
+Create variation in Views/Pillow/Index.cshtml file and write code that is given in tutorial.
+completed part 3 of tutorial.
+
 
 
 
