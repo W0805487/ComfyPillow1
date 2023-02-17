@@ -80,6 +80,15 @@ Date: 2023-02-16    continue....
         Part 4 is almost finish at the end of the day .
 
 
+                2023-02-17
+
+        Update the css on welcome page on index.cshtml file.
+
+        create About page named About.cshtml
+
+        Update css on About page.
+
+
 
 
 
