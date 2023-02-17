@@ -88,6 +88,9 @@ Date: 2023-02-16    continue....
 
         Update css on About page.
 
+6. start part 6 of tutorial: seed the data base 
+    create SeedData.cs file on models folder.
+
 
 
 
