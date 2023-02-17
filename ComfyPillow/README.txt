@@ -104,6 +104,10 @@ Date: 2023-02-16    continue....
      next step: Add Search by genre
      create class named PillowColorViewModel.cs
 
+     ohh get error.... don't panic....try to find it.
+
+
+
 
 
 

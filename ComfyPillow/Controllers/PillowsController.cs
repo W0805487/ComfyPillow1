@@ -22,12 +22,12 @@ namespace ComfyPillow.Controllers
         // GET: Pillows
         public async Task<IActionResult> Index(string searchString)
         {
-            var movies = from p in _context.Pillow
+            var pillows = from p in _context.Pillow
                          select p;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                movies = movies.Where(s => s.material.Contains(searchString));
+                pillows = pillows.Where(s => s.material.Contains(searchString));
             }
             return View(await _context.Pillow.ToListAsync());
         }
