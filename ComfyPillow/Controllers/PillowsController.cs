@@ -20,8 +20,15 @@ namespace ComfyPillow.Controllers
         }
 
         // GET: Pillows
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
+            var movies = from p in _context.Pillow
+                         select p;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.material.Contains(searchString));
+            }
             return View(await _context.Pillow.ToListAsync());
         }
 
@@ -64,6 +71,7 @@ namespace ComfyPillow.Controllers
             }
             return View(pillow);
         }
+
 
         // GET: Pillows/Edit/5
         public async Task<IActionResult> Edit(int? id)

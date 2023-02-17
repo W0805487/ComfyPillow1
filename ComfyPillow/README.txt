@@ -93,6 +93,18 @@ Date: 2023-02-16    continue....
 
        next: Add the seed initializer in program.cs file.
        then check the output and app show to feed the data.
+       
+       Completed part 6 of tutorial.
+
+
+7.  start part 7: Add search
+    Update the Index method found inside Controllers/MoviesController.cs.
+     add the <form> in Views/Movies/Index.cshtml file.
+
+     next step: Add Search by genre
+     create class named PillowColorViewModel.cs
+
+
 
 
 
