@@ -10,14 +10,14 @@
 </p>
 
 <form asp-controller="Pillows" asp-action="Index" method="get">
-    
+
     <p>
 
         <select asp-for="PillowTypes" asp-items="Model.Type">
             <option value="">All</option>
         </select>
 
-        
+
         metrial: <input type="text" name="SearchString" />
         <input type="submit" value="Filter" />
     </p>
@@ -49,31 +49,42 @@
     <tbody>
         @foreach (var item in Model.Pillows)
         {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.material)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Types)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.size)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.color)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.material)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Types)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.size)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.color)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>
+@{
+    <style>
+        body {
+            background-color: #D3D3D3
+        }
+        td {
+            color:green;
+        }
+    </style>
+}
+
