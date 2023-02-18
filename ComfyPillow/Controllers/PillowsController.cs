@@ -79,7 +79,7 @@ namespace ComfyPillow.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,material,Types,size,color,Price")] Pillow pillow)
+        public async Task<IActionResult> Create([Bind("Id,material,Types,size,color,Price,Rating")]Pillow pillow)
         {
             if (ModelState.IsValid)
             {
@@ -112,7 +112,7 @@ namespace ComfyPillow.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,material,Types,size,color,Price")] Pillow pillow)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,material,Types,size,color,Price,Rating")] Pillow pillow)
         {
             if (id != pillow.Id)
             {

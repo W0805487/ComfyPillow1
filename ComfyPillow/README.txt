@@ -106,11 +106,39 @@ Date: 2023-02-16    continue....
 
      ohh get error.... don't panic....try to find it.
 
+     Again create class named PillowTypesViewModel.cs
+
      find error....feel happy...
 
      App successfully run....
 
      part 7 is done..
+
+
+8.  start part 8:  Add a Rating Property to the Pillow Model
+
+                  Add a Rating property to Models/Pillow.cs.
+
+                  Edit the /Views/Pillow/Index.cshtml file and add a Rating field.
+
+                  Edit the /Views/Pillow/create.cshtml file and add a Rating field.
+
+                   Edit the /Views/Pillow/Edit.cshtml file and add a Rating field.
+
+                   Edit the /Views/Pillow/Delete.cshtml file and add a Rating field.
+
+                   Then Add migration:
+
+                   Add-Migration Rating
+                   Update-Database
+
+                   Part 8 is finished.
+
+
+               
+
+                  
+
 
 
 

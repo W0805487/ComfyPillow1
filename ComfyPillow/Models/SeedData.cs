@@ -28,7 +28,9 @@ namespace ComfyPillow.Models
                         Types = "Bed Pillows",
                         size = "Medium",
                         color = "White",
+                        Rating = 5,
                         Price = 20.7M
+                       
 
                     },
                       new Pillow
@@ -37,8 +39,10 @@ namespace ComfyPillow.Models
                           Types = "Pregnancy Pillow",
                           size = "Large",
                           color = "White",
+                          Rating = 5,
                           Price = 55.7M
-                    },
+                          
+                      },
 
 
                     new Pillow
@@ -47,7 +51,9 @@ namespace ComfyPillow.Models
                         Types = "Bed Pillow",
                         size = "Medium",
                         color = "gray",
+                        Rating = 5,
                         Price = 25.6M
+                        
                     },
 
 
@@ -57,7 +63,9 @@ namespace ComfyPillow.Models
                         Types = "Body Pillows",
                         size = "Large",
                         color = "pink",
+                        Rating = 5,
                         Price = 20.7M
+                        
                     },
 
                     new Pillow
@@ -66,7 +74,9 @@ namespace ComfyPillow.Models
                         Types = "Bed Pillows",
                         size = "Small",
                         color = "Red",
+                        Rating = 5,
                         Price = 30.5M
+                       
                     },
                     new Pillow
                     {
@@ -74,7 +84,9 @@ namespace ComfyPillow.Models
                         Types = "Bath Pillows",
                         size = "Medium",
                         color = "black",
+                        Rating = 5,
                         Price = 40.8M
+                       
                     },
                      new Pillow
                      {
@@ -82,15 +94,19 @@ namespace ComfyPillow.Models
                          Types = "Travel Pillows",
                          size = "Medium",
                          color = "White",
+                         Rating = 5,
                          Price = 25.7M
-                    },
+                         
+                     },
                     new Pillow
                     {
                         material = "Foam",
                         Types = "Body Pillows",
                         size = "Large",
                         color = "gray",
+                        Rating = 5,
                         Price = 46.7M
+                        
                     },
                     new Pillow
                     {
@@ -98,7 +114,9 @@ namespace ComfyPillow.Models
                         Types = "Contour Pillow",
                         size = "Medium",
                         color = "Purple",
+                        Rating = 5,
                         Price = 23.7M
+                        
                     },
                     new Pillow
                     {
@@ -106,7 +124,9 @@ namespace ComfyPillow.Models
                         Types = "Body Pillows",
                         size = "Large",
                         color = "yellow",
+                        Rating = 5,
                         Price = 50.7M
+                        
                     }
                     );
 

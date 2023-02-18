@@ -17,7 +17,7 @@
             <option value="">All</option>
         </select>
 
-        Title: <input type="text" asp-for="SearchString" />
+        
         metrial: <input type="text" name="SearchString" />
         <input type="submit" value="Filter" />
     </p>
@@ -40,34 +40,40 @@
             <th>
                 @Html.DisplayNameFor(model => model.Pillows[0].Price)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pillows[0].Rating)
+            </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.Pillows)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.material)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Types)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.size)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.color)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.material)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Types)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>
