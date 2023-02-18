@@ -134,6 +134,20 @@ Date: 2023-02-16    continue....
 
                    Part 8 is finished.
 
+    9.   Part :9    Add validation rules to the movie model
+                     
+                     part 9 is done....
+
+                   Then  add the link of index page
+
+
+                   Finally:  add date in Layout.cshtml file.
+
+
+                   I completed all assignment.....
+
+                   Finish successfully............
+
 
                
 
