@@ -106,6 +106,10 @@ Date: 2023-02-16    continue....
 
      ohh get error.... don't panic....try to find it.
 
+     find error....feel happy...
+
+     App successfully run....
+
 
 
 

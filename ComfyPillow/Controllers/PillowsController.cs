@@ -20,8 +20,14 @@ namespace ComfyPillow.Controllers
         }
 
         // GET: Pillows
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string pillowTypes, string searchString)
         {
+
+            // Use LINQ to get list of genres.
+            IQueryable<string> genreQuery = from m in _context.Pillow
+                                            orderby m.Types
+                                            select m.Types;
+
             var pillows = from p in _context.Pillow
                          select p;
 
@@ -29,7 +35,19 @@ namespace ComfyPillow.Controllers
             {
                 pillows = pillows.Where(s => s.material.Contains(searchString));
             }
-            return View(await _context.Pillow.ToListAsync());
+
+
+            if (!string.IsNullOrEmpty(pillowTypes))
+            {
+                pillows = pillows.Where(x => x.Types == pillowTypes);
+            }
+
+            var pillowTypesVM = new PillowTypesViewModel
+            {
+                Type = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Pillows = await pillows.ToListAsync()
+            };
+            return View(pillowTypesVM);
         }
 
         // GET: Pillows/Details/5
